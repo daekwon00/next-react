@@ -1,0 +1,16 @@
+{
+  "name": "user-management-app",
+  "version": "1.0.0",
+  "description": "User Management Application with Python Backend and React Frontend",
+  "scripts": {
+    "start:backend": "cd backend && python3 app.py",
+    "start:frontend": "cd frontend && npm start",
+    "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "install:frontend": "cd frontend && npm install",
+    "install:backend": "cd backend && pip3 install -r requirements.txt",
+    "setup": "npm run install:frontend && npm run install:backend"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+} 
